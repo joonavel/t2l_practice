@@ -11,7 +11,7 @@ os.environ["LANGCHAIN_PROJECT"] = "test"
 
 
 db = SQLDatabase.from_uri(os.environ["db_uri"])
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 write_query = create_sql_query_chain(llm, db)
 # 쿼리를 실행하는 tool 추가 = db.run(wirte_query)
 execute_query = QuerySQLDataBaseTool(db=db)

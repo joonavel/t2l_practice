@@ -9,7 +9,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "test"
 
 db = SQLDatabase.from_uri(os.environ["db_uri"])
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 agent_executor = create_sql_agent(llm, db=db, agent_type="openai-tools", verbose=True)
 agent_executor.invoke(
     {
