@@ -23,8 +23,10 @@ wget https://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip -O ch
 ### 3. 실행
 각 py 파일의 question을 원하는 질문으로 채우면 됩니다.
 
-- use_agent.py - Text2SQL, 사용자의 질문에 대해 적절한 SQL 쿼리문을 생성 
+- make_query.py - Text2SQL, 사용자의 질문에 대해 적절한 SQL 쿼리문을 생성 
 
 - execute_query.py - 생성된 쿼리문을 실행한 결과를 가져옴
 
 - question_answering.py - 사용자의 질문, 생성된 SQL 쿼리문, 결과를 프롬프트로 묶어 사용자의 질문에 대해 대답
+
+- using_agent.py - 위 과정을 간단한 코드를 통해 agent가 실행
